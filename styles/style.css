@@ -23,14 +23,14 @@ body {
 }
 
 .menu {
-    align-self: center; 
-    height: 23px;
-    width: 420px;
     color: #000;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     line-height: 24.3px;
+    align-self: center; 
+    height: 23px;
+    width: 420px;
 } 
 
 .header__menu-list {
@@ -44,11 +44,15 @@ body {
     list-style-type: none;
 }
 
+.image__link{
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
 .header__logo{
     height: 105px;
     width: 145px;
-    justify-self: center;
-    align-self: center;
 }
 
 .header__links-list-item_bullit {
@@ -57,8 +61,6 @@ body {
 
 .contacts {
     font-family: Raleway, sans-serif;
-    justify-self: end;
-    align-self: center;
     font-style: normal;
     line-height: 24px;
     width: 233px;
@@ -68,6 +70,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
+    justify-self: end;
+    align-self: center;
 }
 
 .cover {
@@ -80,13 +84,13 @@ body {
 }
 
 .cover__title {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
     font-size: 100px;
     color: #fff;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 165px;
@@ -239,13 +243,13 @@ body {
 }
 
 .lots__heading {
-    display: flex;
     color: #000;
     font-family: Raleway;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
     margin: 0 1179px 27px 40px;
 }
 
@@ -330,14 +334,14 @@ body {
     background-size: 100%;
 }
 
-.lots__look-more-link {
-    display: inline-block;
+.lots__look-more-link {   
     color: #000;
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     width: 250px;
     height: 23px;
+    display: inline-block;
     position: absolute;
     padding-top: 50px;
     padding-left: 40px;
@@ -369,23 +373,23 @@ body {
 }
 
 .about__title {
-    display: flex;
     color: #000;
     font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
     padding-top: 100px;
     padding-bottom: 75px;
 }
 
 .about__text {
-    display: flex;
     color: #000;
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     padding-top: 25px;
+    display: flex;
 }
 
 .footer__main {
