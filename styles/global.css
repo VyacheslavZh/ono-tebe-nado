@@ -6,7 +6,7 @@
 
 body {
   min-width: 1100px;
-  margin: 0;
+  margin: auto;
   font-family: Raleway, sans-serif;
 }
 
@@ -30,5 +30,11 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 103%;
+  color: #fff;
+}
+
+address { 
+  all: initial; 
+  font-size: 19px;
 }
