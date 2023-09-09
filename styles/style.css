@@ -11,14 +11,14 @@ body {
     width: 1440px;
     height: 2844px;
     background-color: rgb(255, 255, 255);
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 92px 50px 92px 50px; 
+    margin: 92px 50px 92px 50px;
 }
 
 .menu {
@@ -27,7 +27,7 @@ body {
     font-size: 18px;
     font-style: normal;
     line-height: 24.3px;
-    align-self: center; 
+    align-self: center;
     height: 23px;
     width: 420px;
 } 
@@ -55,21 +55,20 @@ body {
 }
 
 .header__links-list-item_bullit {
-    margin-left: -41px;    
+    margin-left: -41px;
 }
 
 .contacts {
     font-family: Raleway, sans-serif;
     font-style: normal;
     line-height: 24px;
-    width: 233px;
-    height: 97px;
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24.3px;
     justify-self: end;
     align-self: center;
+    width: 233px;
+    height: 97px;
 }
 
 .cover {
@@ -112,7 +111,7 @@ body {
     word-spacing: -25px;
     height: 100px;
     width: 1340px;
-    grid-row: 1; 
+    grid-row: 1;
     z-index: 2;
 }
 
@@ -122,17 +121,17 @@ body {
     font-size: 100px;
     font-weight: bold;
     color: #fff;
-    height: 100px;
-    width: 1280px;
     letter-spacing: 30px;
     word-spacing: -24px;
+    height: 100px;
+    width: 1280px;
     grid-row: 2;
     padding-left: 456px;
     padding-top: 7px;
     z-index: 2;
 }
 
-.text-right { 
+.text-right {
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
     font-size: 100px;
@@ -180,13 +179,13 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 28px;
-    width: 633px;
-    height: 28px;
     color: #fff;
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
     word-spacing: 16px;
+    width: 633px;
+    height: 28px;
     padding-left: 10px;
     position: absolute;
     left: 459px;
@@ -198,13 +197,13 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 28px;
-    width: 633px;
-    height: 28px;
     color: #fff;
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
     word-spacing: 22px;
+    width: 633px;
+    height: 28px;
     position: absolute;
     left: 672px;
     top: 668px;
@@ -291,10 +290,10 @@ body {
     font-size: 22px;
     font-weight: 700;
     line-height: 120%; /* 26.4px */
-    border-bottom: 1px solid;
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
+    border-bottom: 1px solid;
     width: 350px;
     margin: 50px 40px auto 40px;
 }
@@ -304,9 +303,9 @@ body {
     font-family: Raleway, sans-serif;
     font-size: 20px;
     font-weight: 400;
+    text-align: left;
     line-height: 120%; /* 24px */
     margin: auto 40px 50px 40px;
-    text-align: left;
     position: absolute;
     bottom: 0;
 }
@@ -332,7 +331,7 @@ body {
     background-size: 100%;
 }
 
-.lots__look-more-link {   
+.lots__look-more-link {
     color: #000;
     font-family: Raleway, sans-serif;
     font-size: 20px;
