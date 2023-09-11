@@ -8,7 +8,6 @@ main {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
   font-size: 18px;
   width: 1440px;
   height: 2844px;
@@ -240,7 +239,7 @@ body {
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
