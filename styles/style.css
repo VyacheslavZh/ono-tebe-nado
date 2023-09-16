@@ -4,13 +4,14 @@
 
 main {
   width: 1440px;
-  height: 2184px;
+  min-height: 2453px;
+  flex-grow: 1;
 }
 
 body {
   font-size: 18px;
   width: 1440px;
-  height: 2844px;
+  min-height: 2844px;
 }
 
 .header {
@@ -27,13 +28,13 @@ body {
   line-height: 24.3px;
   align-self: center;
   color: #000;
-  height: 23px;
+  min-height: 23px;
   width: 420px;
 }
 
 .header__menu-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 23% 44% 35%;
   grid-template-rows: repeat(1, 1fr);
   list-style-type: circle;
 }
@@ -53,8 +54,8 @@ body {
   width: 145px;
 }
 
-.header__links-list-item_bullit {
-  margin-left: -41px;
+.header__links-list-item {
+  white-space: nowrap;
 }
 
 .contacts {
@@ -66,17 +67,22 @@ body {
   font-weight: 400;
   justify-self: end;
   align-self: center;
-  width: 233px;
-  height: 97px;
+  max-width: 240px;
+  min-height: 97px;
+}
+
+.contacts__email {
+  padding-right: 100px;
 }
 
 .cover {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   width: 1440px;
-  height: 757px;
+  height: auto;
+  padding-bottom: px;
 }
 
 .cover__title {
@@ -86,7 +92,6 @@ body {
   color: #fff;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 165px;
@@ -96,9 +101,8 @@ body {
 .overlay {
   display: block;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background-color: rgb(0 0 0 / 0.6);
-  position: relative;
 }
 
 .text-left {
@@ -107,8 +111,8 @@ body {
   font-size: 100px;
   color: #fff;
   letter-spacing: 30px;
-  word-spacing: -25px;
-  height: 100px;
+  word-spacing: -24px; /* вдокументациях доки пишут, что разрешается использование отрицательных значений*/
+  min-height: 100px;
   width: 1340px;
   grid-row: 1;
   z-index: 2;
@@ -122,11 +126,11 @@ body {
   color: #fff;
   letter-spacing: 30px;
   word-spacing: -24px;
-  height: 100px;
+  min-height: 100px;
   width: 1280px;
   grid-row: 2;
   padding-left: 456px;
-  padding-top: 7px;
+  padding-bottom: 9px;
   z-index: 2;
 }
 
@@ -135,12 +139,13 @@ body {
   text-transform: uppercase;
   font-size: 100px;
   color: #fff;
-  height: 100px;
+  min-height: 100px;
   width: 1340px;
   grid-row: 3;
   padding-left: 924px;
-  padding-top: 7px;
   z-index: 2;
+  position: relative;
+  bottom: 6px;
 }
 
 .letter-n {
@@ -155,6 +160,11 @@ body {
   letter-spacing: 8px;
 }
 
+.cover__bottom {
+  margin-top: 96px;
+  width: 1440px;
+}
+
 .footer-cover__text {
   font-family: Raleway, sans-serif;
   text-align: center;
@@ -166,15 +176,17 @@ body {
   text-transform: uppercase;
   word-spacing: 18px;
   padding-right: 5px;
-  width: 633px;
-  height: 28px;
-  position: absolute;
-  left: 216px;
-  top: 668px;
+  margin-left: 422px;
+  margin-top: 10px;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: 27px;
 }
 
+/* разные классы так как разный word-spacing*/
 .footer-cover__text-two {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   text-align: center;
   font-size: 22px;
   line-height: 28px;
@@ -183,57 +195,48 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   word-spacing: 16px;
-  width: 633px;
-  height: 28px;
-  padding-left: 10px;
-  position: absolute;
-  left: 459px;
-  top: 668px;
+  margin-left: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: 27px;
 }
 
 .footer-cover__text-three {
   font-family: Raleway, sans-serif;
   text-align: center;
   font-size: 22px;
-  line-height: 28px;
   color: #fff;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   word-spacing: 22px;
-  width: 633px;
-  height: 28px;
-  position: absolute;
-  left: 672px;
-  top: 668px;
-}
-
-.footer-cover__button {
-  padding-left: 75px;
-  position: absolute;
+  margin-left: 1px;
+  vertical-align: middle;
+  position: relative;
+  top: 27px;
 }
 
 .footer-cover__button-text {
   text-align: center;
   font-family: Raleway, sans-serif;
   font-size: 22px;
-  line-height: normal;
   text-transform: uppercase;
   color: #fff;
   padding: 12px 32px;
   background: transparent;
   border: 1px solid;
   width: 257px;
-  height: 52px;
-  position: absolute;
-  left: 1132px;
-  top: 150px;
+  min-height: 52px;
+  margin-bottom: 37px;
+  margin-left: 1133px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 14px;
 }
 
 .lots {
   width: 1340px;
-  height: 579px;
-  flex-shrink: 0;
+  min-height: 579px;
   margin: 180px auto auto;
 }
 
@@ -251,11 +254,10 @@ body {
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
   list-style-type: none;
   gap: 0 25px;
   flex-wrap: wrap;
-  height: 430px;
+  min-height: 450px;
 }
 
 .card {
@@ -264,13 +266,11 @@ body {
 }
 
 .lots__card-list-item {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   min-width: 100%;
-  min-height: 450px;
+  min-height: 100%;
   flex-shrink: 0;
   cursor: pointer;
+  position: relative;
 }
 
 .card__title {
@@ -284,6 +284,7 @@ body {
   color: #fff;
   width: 350px;
   margin: 50px 40px auto 40px;
+  position: relative;
 }
 
 .card__text {
@@ -293,16 +294,43 @@ body {
   text-align: left;
   color: #fff;
   line-height: 120%; /* 24px */
-  margin: auto 40px 50px 40px;
-  position: absolute;
-  bottom: 0;
+  margin: 0 40px;
 }
 
-.card__image {
-  width: 430px;
-  height: 450px;
-  position: absolute;
-  z-index: -1;
+.card__text-one {
+  position: relative;
+  top: 200px;
+}
+
+.card__text-two {
+  position: relative;
+  top: 30px;
+}
+
+.card__text-tree {
+  position: relative;
+  top: 78px;
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
 }
 
 .lots__look-more-link {
@@ -311,16 +339,15 @@ body {
   font-weight: 400;
   color: #000;
   width: 250px;
-  height: 23px;
-  display: inline-block;
-  position: absolute;
-  padding-top: 50px;
+  position: relative;
+  top: 30px;
+  padding-top: 40px;
   padding-left: 40px;
 }
 
 .about {
   width: 1340px;
-  height: 487px;
+  min-height: 487px;
   margin: 181px auto 367px;
   display: grid;
   grid-template-columns: 430px 885px;
@@ -351,7 +378,7 @@ body {
   text-transform: uppercase;
   display: flex;
   padding-top: 100px;
-  padding-bottom: 75px;
+  padding-bottom: 99px;
 }
 
 .about__text {
@@ -359,25 +386,31 @@ body {
   font-size: 20px;
   font-weight: 400;
   color: #000;
-  padding-top: 25px;
+  padding-bottom: 24px;
   display: flex;
-}
-
-.footer__main {
-  min-height: 367px;
 }
 
 .footer {
   font-family: Raleway, sans-serif;
   color: #000;
-  width: 1340px;
-  height: 97px;
+  width: 1370px;
   display: grid;
-  grid-template-columns: 17% 12% 20%;
+  grid-template-columns: 18% 12% 20%;
   grid-template-rows: repeat(1, 1fr);
-  gap: 356px;
-  margin: 181px 50px 90px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 90px 50px;
   flex-grow: 1;
+  position: relative;
+  bottom: 88px;
+}
+
+.footer__address {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  color: #000;
+  font-size: 18px;
 }
 
 .footer__menu-list {
@@ -395,4 +428,5 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   gap: 20px;
+  width: 270px;
 }
