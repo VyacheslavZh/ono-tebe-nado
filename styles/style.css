@@ -2,16 +2,14 @@
   box-sizing: border-box;
 }
 
-main {
+.main {
   width: 1440px;
-  min-height: 2453px;
   flex-grow: 1;
 }
 
 body {
   font-size: 18px;
   width: 1440px;
-  min-height: 2844px;
 }
 
 .header {
@@ -25,10 +23,9 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
-  line-height: 24.3px;
+  line-height: 25px;
   align-self: center;
   color: #000;
-  min-height: 23px;
   width: 420px;
 }
 
@@ -43,7 +40,7 @@ body {
   list-style-type: none;
 }
 
-.image__link {
+.header__link {
   display: block;
   justify-self: center;
   align-self: center;
@@ -68,11 +65,6 @@ body {
   justify-self: end;
   align-self: center;
   max-width: 240px;
-  min-height: 97px;
-}
-
-.contacts__email {
-  padding-right: 100px;
 }
 
 .cover {
@@ -81,8 +73,6 @@ body {
   background-position: center;
   background-size: cover;
   width: 1440px;
-  height: auto;
-  padding-bottom: px;
 }
 
 .cover__title {
@@ -112,9 +102,7 @@ body {
   color: #fff;
   letter-spacing: 30px;
   word-spacing: -24px; /* вдокументациях доки пишут, что разрешается использование отрицательных значений*/
-  min-height: 100px;
   width: 1340px;
-  grid-row: 1;
   z-index: 2;
 }
 
@@ -126,9 +114,8 @@ body {
   color: #fff;
   letter-spacing: 30px;
   word-spacing: -24px;
-  min-height: 100px;
-  width: 1280px;
   grid-row: 2;
+  width: 1280px;
   padding-left: 456px;
   padding-bottom: 9px;
   z-index: 2;
@@ -139,7 +126,6 @@ body {
   text-transform: uppercase;
   font-size: 100px;
   color: #fff;
-  min-height: 100px;
   width: 1340px;
   grid-row: 3;
   padding-left: 924px;
@@ -161,82 +147,45 @@ body {
 }
 
 .cover__bottom {
-  margin-top: 96px;
-  width: 1440px;
+  display: grid;
+  grid-template-columns: 79% 20%;
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 95px;
+  width: 1435px;
 }
 
 .footer-cover__text {
+  display: flex;
   font-family: Raleway, sans-serif;
   text-align: center;
   font-size: 22px;
   line-height: 28px;
+  width: 640px;
   color: #fff;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  word-spacing: 18px;
-  padding-right: 5px;
-  margin-left: 422px;
-  margin-top: 10px;
-  height: 100%;
-  vertical-align: middle;
-  position: relative;
-  top: 27px;
-}
-
-/* разные классы так как разный word-spacing*/
-.footer-cover__text-two {
-  font-family: Raleway, sans-serif;
-  text-align: center;
-  font-size: 22px;
-  line-height: 28px;
-  color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  word-spacing: 16px;
-  margin-left: 14px;
-  vertical-align: middle;
-  position: relative;
-  top: 27px;
-}
-
-.footer-cover__text-three {
-  font-family: Raleway, sans-serif;
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  word-spacing: 22px;
-  margin-left: 1px;
-  vertical-align: middle;
-  position: relative;
-  top: 27px;
+  word-spacing: 17px;
+  margin-left: 423px;
+  margin-top: 9px;
+  padding-top: 17px;
 }
 
 .footer-cover__button-text {
-  text-align: center;
   font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
-  padding: 12px 32px;
+  padding: 13px 30px;
   background: transparent;
   border: 1px solid;
   width: 257px;
-  min-height: 52px;
-  margin-bottom: 37px;
-  margin-left: 1133px;
-  vertical-align: middle;
-  position: relative;
-  bottom: 14px;
+  margin-bottom: 48px;
+  margin-top: 14px;
 }
 
 .lots {
   width: 1340px;
-  min-height: 579px;
   margin: 180px auto auto;
 }
 
@@ -248,21 +197,40 @@ body {
   text-transform: uppercase;
   color: #000;
   display: flex;
-  margin: 0 1179px 27px 40px;
+  margin: 0 1174px 27px 40px;
 }
 
 .lots__card-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   gap: 0 25px;
   flex-wrap: wrap;
-  min-height: 450px;
+}
+
+.url {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .lots__card-list-item {
@@ -270,7 +238,6 @@ body {
   min-height: 100%;
   flex-shrink: 0;
   cursor: pointer;
-  position: relative;
 }
 
 .card__title {
@@ -284,7 +251,6 @@ body {
   color: #fff;
   width: 350px;
   margin: 50px 40px auto 40px;
-  position: relative;
 }
 
 .card__text {
@@ -294,43 +260,19 @@ body {
   text-align: left;
   color: #fff;
   line-height: 120%; /* 24px */
-  margin: 0 40px;
-}
-
-.card__text-one {
-  position: relative;
-  top: 200px;
-}
-
-.card__text-two {
-  position: relative;
-  top: 30px;
-}
-
-.card__text-tree {
-  position: relative;
-  top: 78px;
+  margin: 0 40px 50px;
 }
 
 .card_type_film {
   background-image: url(/images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 450px;
 }
 
 .card_type_book {
   background-image: url(/images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 450px;
 }
 
 .card_type_picture {
   background-image: url(/images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 450px;
 }
 
 .lots__look-more-link {
@@ -339,16 +281,14 @@ body {
   font-weight: 400;
   color: #000;
   width: 250px;
-  position: relative;
-  top: 30px;
-  padding-top: 40px;
+  display: flex;
+  margin-top: 30px;
   padding-left: 40px;
 }
 
 .about {
   width: 1340px;
-  min-height: 487px;
-  margin: 181px auto 367px;
+  margin: 181px auto 159px;
   display: grid;
   grid-template-columns: 430px 885px;
   justify-items: center;
@@ -377,18 +317,19 @@ body {
   color: #000;
   text-transform: uppercase;
   display: flex;
-  padding-top: 100px;
+  padding-top: 102px;
   padding-bottom: 99px;
 }
 
 .about__text {
   font-family: Raleway, sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 24px;
   color: #000;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -398,9 +339,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 50px 90px 50px;
-  flex-grow: 1;
-  position: relative;
-  bottom: 88px;
 }
 
 .footer__address {

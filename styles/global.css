@@ -5,7 +5,10 @@
 }
 
 body {
-  min-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1440px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
 }
@@ -26,7 +29,7 @@ blockquote {
 }
 
 a {
-  color: inherit;
+  color: black;
 }
 
 img {

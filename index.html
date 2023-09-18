@@ -24,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#0" class="image__link">
+      <a href="#0" class="header__link">
         <img
           src="images/logo-black.svg"
           alt="Логотип сайта"
@@ -32,14 +32,16 @@
         />
       </a>
       <address class="contacts">
-        <a href="tel:+77778889900">+9 999 555 5555</a>
-        <a class="contacts contacts__email" href="mailto:article@auth.or"
-          >info@sobaka.ge</a
-        >
+        <a href="tel:+77778889900">+9 999 555 5555</a><br />
+        <p>
+          <a class="contacts__email" href="mailto:info@sobaka.ge"
+            >info@sobaka.ge</a
+          >
+        </p>
         <a>наб. Принсенграхт 263-265, Амстердам</a>
       </address>
     </header>
-    <main>
+    <main class="main">
       <section class="cover">
         <div class="overlay">
           <h1 class="cover__title">
@@ -51,38 +53,41 @@
               <span class="text-right__letter-d">д</span> о
             </span>
           </h1>
-          <p class="cover__bottom">
-            <span class="footer-cover__text">аукцион вещей,</span>
-            <span class="footer-cover__text-two">в которые никто </span>
-            <span class="footer-cover__text-three">не верил</span>
+          <div class="cover__bottom">
+            <p class="footer-cover__text">
+              аукцион вещей, в которые никто не верил
+            </p>
             <button class="footer-cover__button-text">сделать ставку</button>
-          </p>
+          </div>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item" onclick="location.href='ЛИНК'">
+          <li class="lots__card-list-item">
             <article class="card card_type_film">
-              <div class="overlay">
+              <div class="overlay card-overlay">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="card__text card__text-one">
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
+                <a href="http://127.0.0.1:5500/index.html#0"
+                  ><span class="url"></span
+                ></a>
               </div>
             </article>
           </li>
-          <li class="lots__card-list-item" onclick="location.href='ЛИНК'">
+          <li class="lots__card-list-item">
             <article class="card card_type_book">
-              <div class="overlay">
+              <div class="overlay card-overlay">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="card__text card__text-two">
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -90,21 +95,27 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
+                <a href="http://127.0.0.1:5500/index.html#0"
+                  ><span class="url"></span
+                ></a>
               </div>
             </article>
           </li>
-          <li class="lots__card-list-item" onclick="location.href='ЛИНК'">
+          <li class="lots__card-list-item">
             <article class="card card_type_picture">
-              <div class="overlay">
+              <div class="overlay card-overlay">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="card__text card__text-tree">
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков… Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
+                <a href="http://127.0.0.1:5500/index.html#0"
+                  ><span class="url"></span
+                ></a>
               </div>
             </article>
           </li>
@@ -140,11 +151,13 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__address">
+      <addres class="contacts">
         <a href="tel:+77778889900">+9 999 555 5555</a><br />
-        <a href="mailto:article@auth.or">info@sobaka.ge</a><br />
-        <a>наб. Принсенграхт 263-265,<br />Амстердам</a>
-      </address>
+        <p>
+          <a href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
+        </p>
+        <a>наб. Принсенграхт 263-265, Амстердам</a>
+      </addres>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__links-list-item">
