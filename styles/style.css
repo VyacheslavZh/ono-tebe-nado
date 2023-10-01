@@ -224,8 +224,9 @@ body {
 .card-overlay {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 50px 40px;
 }
 
 .lots__card-list-item {
@@ -245,7 +246,6 @@ body {
   text-align: left;
   color: #fff;
   width: 350px;
-  margin: 50px 40px auto 40px;
 }
 
 .card__text {
@@ -255,7 +255,6 @@ body {
   text-align: left;
   color: #fff;
   line-height: 120%; /* 24px */
-  margin: 0 40px 50px;
 }
 
 .card_type_film {
@@ -320,11 +319,14 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 23px;
   color: #000;
-  padding-bottom: 23px;
   display: flex;
   flex-direction: column;
+}
+
+.about__text-top {
+  padding-bottom: 30px;
 }
 
 .footer {
@@ -333,7 +335,7 @@ body {
   width: 1370px;
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 90px 50px;
+  margin: 26px auto auto 50px;
 }
 
 .footer__address {
