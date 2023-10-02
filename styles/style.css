@@ -335,7 +335,7 @@ body {
   width: 1370px;
   display: flex;
   justify-content: space-between;
-  margin: 26px auto auto 50px;
+  margin: 26px auto 90px 50px;
 }
 
 .footer__address {
